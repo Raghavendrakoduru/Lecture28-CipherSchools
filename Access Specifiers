@@ -1,0 +1,56 @@
+#include<iostream>
+using namespace std;
+//public is access specifiers  
+class Student{
+private:
+string name1;
+ string password;
+
+public:
+//we use public function to set private data
+string name;
+int attendence;
+float total_marks;
+void calculate_percentage(){
+  cout<<name<<":"<<"Total Percentage of him:"<<(total_marks+attendence)/2<<"%";
+  
+}
+
+  
+};
+int main(){
+  ///Student is class and a,b,c are obejects
+//of the class 
+  //private numbers are accessesbel  inside class
+  Student a,b,c;
+  a.name="Rohit";
+  a.attendence=90;
+  a.total_marks=60;
+  a.calculate_percentage();
+  b.name1="Rohith";
+  
+  
+}
+#include<iostream>
+using namespace std;
+class bank{
+private:int acc_name;
+int credit_no;
+public:
+
+void set_credit_card_no(int number,string name){
+  credit_no= number;
+  acc_name=name;
+  //cout<<name<<" "<<"Credit card number is:"<<credit_no<<endl;
+}
+void get_credit_card_no(){
+  cout<<name<<" "<<"Credit card number is:"<<credit_no<<endl;
+}
+
+};
+int main(){
+  bank  a,b,c;
+  a.name = "Ram";
+  a.set_credit_card_no(12300);
+  a.get_credit_card_no();
+}
